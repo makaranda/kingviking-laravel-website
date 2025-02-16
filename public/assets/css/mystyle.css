@@ -1,0 +1,10 @@
+.slider_bg_1 {
+    background-image: url(../frontend/img/banner/musician-slider-baner.jpg);
+}
+
+.music_area .music_field .thumb {
+    border: 2px solid #ccc;
+}
+.contact_rsvp {
+    background-image: url(../frontend/img/banner/footer-banner.jpg);
+}

@@ -11,3 +11,5 @@
 <link rel="stylesheet" href="{{ url('assets/frontend/css/slick.css') }}">
 <link rel="stylesheet" href="{{ url('assets/frontend/css/slicknav.css') }}">
 <link rel="stylesheet" href="{{ url('assets/frontend/css/style.css') }}">
+<link rel="stylesheet" href="{{ url('assets/css/mystyle.css') }}">
+<link rel="stylesheet" href="{{ url('assets/css/myresponsive.css') }}">

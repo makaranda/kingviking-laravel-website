@@ -1,5 +1,17 @@
 
-
+    <!-- contact_rsvp -->
+    <div class="contact_rsvp">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="text text-center">
+                        <h3>Contact For King Viking</h3>
+                        <a class="boxed-btn3" href="{{ route('contact') }}">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- footer start -->
     <footer class="footer">
         <div class="footer_top">
@@ -25,11 +37,11 @@
                                     Contact Me
                             </h3>
                             <ul>
-                                <li><a href="#">conbusi@support.com
+                                <li><a href="#">info@kingviking.com
                                     </a></li>
-                                <li><a href="#">+10 873 672 6782
+                                <li><a href="#">+94 77 394 4180
                                     </a></li>
-                                <li><a href="#">600/D, Green road, Kings Garden NewYork-6732</a></li>
+                                <li><a href="#">600/D, Canada</a></li>
                             </ul>
                             <div class="socail_links">
                                 <ul>
@@ -38,11 +50,11 @@
                                             <i class=" fa fa-facebook "></i>
                                         </a>
                                     </li>
-                                    <li>
+                                    {{-- <li>
                                         <a href="#">
                                             <i class="fa fa-google-plus"></i>
                                         </a>
-                                    </li>
+                                    </li> --}}
                                     <li>
                                         <a href="#">
                                             <i class="fa fa-twitter"></i>
