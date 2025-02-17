@@ -24,4 +24,27 @@ class HomeController extends Controller
     {
         return view('pages.frontend.contact.index'); // Make sure this view exists
     }
+
+    public function aboutUs()
+    {
+        return view('pages.frontend.about.index'); // Make sure this view exists
+    }
+
+    public function gallery()
+    {
+        return view('pages.frontend.gallery.index'); // Make sure this view exists
+    }
+
+    public function musicTracks()
+    {
+        return view('pages.frontend.musictracks.index'); // Make sure this view exists
+    }
+
+    public function musicVideos()
+    {
+        return view('pages.frontend.musicvideos.index'); // Make sure this view exists
+    }
+
+
+
 }

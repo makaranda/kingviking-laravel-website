@@ -24,4 +24,8 @@ Route::get('/admin-login', function () {
 });
 
 // Add contact route
-Route::get('/contact', [HomeController::class, 'contactUs'])->name('contact');
+Route::get('/contact-us', [HomeController::class, 'contactUs'])->name('frontend.contact');
+Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('frontend.about');
+Route::get('/gallery', [HomeController::class, 'gallery'])->name('frontend.gallery');
+Route::get('/music-tracks', [HomeController::class, 'musicTracks'])->name('frontend.musictracks');
+Route::get('/music-videos', [HomeController::class, 'musicVideos'])->name('frontend.musicvideos');

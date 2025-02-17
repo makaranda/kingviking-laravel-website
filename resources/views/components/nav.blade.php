@@ -7,8 +7,11 @@
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-2">
                             <div class="logo">
-                                <a href="index.html">
-                                    <img src="{{ url('assets/frontend/img/logo.png') }}" alt="">
+                                <a href="{{ route('home') }}">
+                                    <img src="{{ url('public/assets/frontend/img/king-viking-logo.jpg') }}" alt="King Viking Logo" class="img-fluid main-logo">
+                                    <div alt="King Viking Logo" class="mobile-logo d-lg-none">
+                                        King Viking
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -16,16 +19,16 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a class="active" href="index.html">home</a></li>
-                                        <li><a href="about">About</a></li>
-                                        <li><a href="track.html">tracks</a></li>
+                                        <li class="{{ route('home') == request()->url() ? 'active' : '' }}"><a class="active" href="{{ route('home') }}">home</a></li>
+                                        <li class="{{ route('frontend.about') == request()->url() ? 'active' : '' }}"><a href="{{ route('frontend.about') }}">About</a></li>
+                                        <li class="{{ route('frontend.musictracks') == request()->url() ? 'active' : '' }}"><a href="{{ route('frontend.musictracks') }}">tracks</a></li>
                                         {{-- <li><a href="#">blog <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
                                                 <li><a href="blog.html">blog</a></li>
                                                 <li><a href="single-blog.html">single-blog</a></li>
                                             </ul>
                                         </li> --}}
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li class="{{ route('frontend.contact') == request()->url() ? 'active' : '' }}"><a href="{{ route('frontend.contact') }}">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>

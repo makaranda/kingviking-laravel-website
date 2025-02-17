@@ -6,7 +6,7 @@
                 <div class="col-xl-12">
                     <div class="text text-center">
                         <h3>Contact For King Viking</h3>
-                        <a class="boxed-btn3" href="{{ route('contact') }}">Contact Me</a>
+                        <a class="boxed-btn3" href="{{ route('frontend.contact') }}">Contact Me</a>
                     </div>
                 </div>
             </div>
@@ -92,11 +92,10 @@
                     <div class="col-xl-5 col-md-6">
                         <div class="footer_links">
                             <ul>
-                                <li><a href="#">home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">tracks</a></li>
-                                <li><a href="#">blog</a></li>
-                                <li><a href="#">contact</a></li>
+                                <li><a href="{{ route('home') }}">home</a></li>
+                                <li><a href="{{ route('frontend.about') }}">about</a></li>
+                                <li><a href="{{ route('frontend.musictracks') }}">tracks</a></li>
+                                <li><a href="{{ route('frontend.contact') }}">contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -104,3 +103,4 @@
             </div>
         </div>
     </footer>
+
