@@ -103,7 +103,7 @@
                             </div>
 
                             <div class="hover_inner">
-                                {{-- <span>New York Show-2018</span> --}}
+                                <span>New York Show-2018</span>
                                 <h3><a href="#">Shadows of My Dream</a></h3>
                             </div>
                         </div>
@@ -122,7 +122,7 @@
                             </div>
 
                             <div class="hover_inner">
-                                {{-- <span>New York Show-2018</span> --}}
+                                <span>New York Show-2018</span>
                                 <h3><a href="#">Shadows of My Dream</a></h3>
                             </div>
                         </div>
@@ -141,7 +141,7 @@
                             </div>
 
                             <div class="hover_inner">
-                                {{-- <span>New York Show-2018</span> --}}
+                                <span>New York Show-2018</span>
                                 <h3><a href="#">Shadows of My Dream</a></h3>
                             </div>
                         </div>
@@ -160,7 +160,7 @@
                             </div>
 
                             <div class="hover_inner">
-                                {{-- <span>New York Show-2018</span> --}}
+                                <span>New York Show-2018</span>
                                 <h3><a href="#">Shadows of My Dream</a></h3>
                             </div>
                         </div>

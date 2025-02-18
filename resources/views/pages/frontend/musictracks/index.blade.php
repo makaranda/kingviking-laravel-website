@@ -68,7 +68,7 @@
                                             <div class="audio_name">
                                                 <div class="name">
                                                     <h4>I Am Fallin</h4>
-                                                    <p>25 December, 2024</p>
+                                                    {{-- <p>25 December, 2024</p> --}}
                                                 </div>
                                                 <audio preload="auto" controls>
                                                     <source src="{{ url('public/assets/frontend/audios/i-am-fallin-king-viking-26Oct2024.mp3') }}">
@@ -95,7 +95,7 @@
                                             <div class="audio_name">
                                                 <div class="name">
                                                     <h4>Stay With Me V2 MIX</h4>
-                                                    <p>15 December, 2024</p>
+                                                    {{-- <p>15 December, 2024</p> --}}
                                                 </div>
                                                 <audio preload="auto" controls>
                                                     <source src="{{ url('public/assets/frontend/audios/stay-with-me-remix.mp3') }}">
@@ -122,7 +122,7 @@
                                             <div class="audio_name">
                                                 <div class="name">
                                                     <h4>Stay WIth Me</h4>
-                                                    <p>02 December, 2024</p>
+                                                    {{-- <p>02 December, 2024</p> --}}
                                                 </div>
                                                 <audio preload="auto" controls>
                                                     <source src="{{ url('public/assets/frontend/audios/stay-with-me-sample-mix-128.mp3') }}">
