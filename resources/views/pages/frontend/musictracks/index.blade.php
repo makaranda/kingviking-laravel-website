@@ -41,7 +41,7 @@
                                             <div class="audio_name">
                                                 <div class="name">
                                                     <h4>Hold On (to my side of the story)</h4>
-                                                    <p>08 January, 2025</p>
+                                                    {{-- <p>08 January, 2025</p> --}}
                                                 </div>
                                                 <audio preload="auto" controls>
                                                     <source src="{{ url('public/assets/frontend/audios/7010-fvr-master_3.mp3') }}">
