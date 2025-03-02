@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="{{ url('public/assets/frontend/css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url('public/assets/frontend/css/owl.carousel.min.css') }}">
+<link rel="stylesheet" href="{{ url('public/assets/frontend/css/magnific-popup.css') }}">
+<link rel="stylesheet" href="{{ url('public/assets/frontend/css/font-awesome.min.css') }}">
+<link rel="stylesheet" href="{{ url('public/assets/frontend/css/themify-icons.css') }}">
+<link rel="stylesheet" href="{{ url('public/assets/frontend/css/nice-select.css') }}">
+<link rel="stylesheet" href="{{ url('public/assets/frontend/css/audioplayer.css') }}">
+<link rel="stylesheet" href="{{ url('public/assets/frontend/css/flaticon.css') }}">
+<link rel="stylesheet" href="{{ url('public/assets/frontend/css/gijgo.css') }}">
+<link rel="stylesheet" href="{{ url('public/assets/frontend/css/animate.css') }}">
+<link rel="stylesheet" href="{{ url('public/assets/frontend/css/slick.css') }}">
+<link rel="stylesheet" href="{{ url('public/assets/frontend/css/slicknav.css') }}">
+<link rel="stylesheet" href="{{ url('public/assets/frontend/css/style.css') }}">
+<link rel="stylesheet" href="{{ url('public/assets/css/mystyle.css') }}">
+<link rel="stylesheet" href="{{ url('public/assets/css/myresponsive.css') }}">
