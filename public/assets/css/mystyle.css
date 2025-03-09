@@ -28,13 +28,17 @@
 
 .audio-thumb {
     width: 148px;
+    height: 130px;
 }
 .section_title h3,.boxed-btn,.boxed-btn3,.footer .footer_top .subscribe-from button,label.error {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-
+.bradcam_area {
+    padding: 250px 0 150px 0;
+}
 .breadcam_bg_2 {
-    background: url(../../assets/frontend/img/banner/guitar-background.jpg);
+    /* background: url(../../assets/frontend/img/banner/guitar-background.jpg); */
+    background: url(../../assets/frontend/img/banner/website-main-banner.jpg);
 }
 .header-area .main-header-area .main-menu ul li.active a {
     color: #ED1B1B;
@@ -62,3 +66,82 @@ label.error {
     font-size: 24px;
 }
 
+.row.grid {
+    height: 772.032px;
+    .grid-item.cat4, .grid-item.cat2 {
+        top: 403px;
+    }
+}
+
+.single_video{
+    .hover_elements{
+        .video{
+            .popup-video{
+
+            }
+        }
+        .hover_inner{
+            bottom: 64px !important;
+            background-color: #cbc5a1;
+            height: 22px;
+            width: 240px;
+            span{
+                opacity: 1 !important;
+                font-weight: 800 !important;
+                color: #ab0707 !important;
+            }
+            h3{
+                opacity: 1 !important;
+            }
+        }
+        &:hover {
+            .hover_inner {
+                background-color: transparent;
+                span {
+                    font-weight: 400 !important;
+                    color: #ED1B1B !important;
+                    color: #ff2020 !important;
+                    background-color: #00000080;
+                    padding: 6px;
+                }
+            }
+        }
+    }
+}
+
+/* Edited Music Tracks */
+.music_area_home {
+    .audioplayer {
+        display: inline-block;
+        audio{
+            display: block;
+        }
+        .audioplayer-playpause {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+        }
+        .audioplayer-bar{
+            top: -23px;
+            left: 24px;
+            margin-right: auto;
+        }
+        .audioplayer-volume {
+            display: flex;
+            align-items: center;
+            padding-left: 6px;
+        }
+    }
+    .music_field{
+        .audio_name{
+            top: unset;
+        }
+    }
+    .music_btn{
+        .boxed-btn{
+            font-size: 14px;
+        }
+    }
+}

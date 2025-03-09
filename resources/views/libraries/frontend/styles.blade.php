@@ -11,5 +11,5 @@
 <link rel="stylesheet" href="{{ url('public/assets/frontend/css/slick.css') }}">
 <link rel="stylesheet" href="{{ url('public/assets/frontend/css/slicknav.css') }}">
 <link rel="stylesheet" href="{{ url('public/assets/frontend/css/style.css') }}">
-<link rel="stylesheet" href="{{ url('public/assets/css/mystyle.css') }}">
-<link rel="stylesheet" href="{{ url('public/assets/css/myresponsive.css') }}">
+<link rel="stylesheet" href="{{ url('public/assets/css/mystyle.css?v='.time().'') }}">
+<link rel="stylesheet" href="{{ url('public/assets/css/myresponsive.css?v='.time().'') }}">

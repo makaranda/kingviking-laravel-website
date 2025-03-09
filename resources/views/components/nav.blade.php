@@ -8,7 +8,7 @@
                         <div class="col-xl-3 col-lg-2">
                             <div class="logo">
                                 <a href="{{ route('home') }}">
-                                    <img src="{{ url('public/assets/frontend/img/king-viking-logo.jpg') }}" alt="King Viking Logo" class="img-fluid main-logo">
+                                    <img src="{{ url('public/assets/frontend/img/'. $settings['main_logo']) }}" alt="King Viking Logo" class="img-fluid main-logo"/>
                                     <div alt="King Viking Logo" class="mobile-logo d-lg-none">
                                         King Viking
                                     </div>
@@ -36,9 +36,9 @@
                         <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                             <div class="social_icon text-right">
                                 <ul>
-                                    <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                    <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                                    <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                                    <li><a href="{{ $settings['social_facebook'] }}"> <i class="fa fa-facebook"></i> </a></li>
+                                    <li><a href="{{ $settings['social_twitter'] }}"> <i class="fa fa-twitter"></i> </a></li>
+                                    <li><a href="{{ $settings['social_instagram'] }}"> <i class="fa fa-instagram"></i> </a></li>
                                 </ul>
                             </div>
                         </div>
