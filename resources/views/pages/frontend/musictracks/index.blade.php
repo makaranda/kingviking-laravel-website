@@ -30,114 +30,42 @@
             </div>
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-10">
-                        <div class="row align-items-center justify-content-center mb-20">
-                            <div class="col-xl-12">
-                                <div class="row align-items-center">
-                                    <div class="col-xl-9 col-md-9">
-                                        <div class="music_field">
-                                            <div class="thumb">
-                                                <img src="{{ url('public/assets/frontend/img/music_man/hold-on.jpg') }}" alt="Hold On (to my side of the story)" class="img-fluid audio-thumb">
-                                            </div>
-                                            <div class="audio_name">
-                                                <div class="name">
-                                                    <h4>Hold On (to my side of the story)</h4>
-                                                    {{-- <p>08 January, 2025</p> --}}
+                        @if($music_tracks && count($music_tracks) > 0)
+                        @foreach ($music_tracks as $music_track)
+                            @if($music_track['order'] != 0)
+                            
+                                <div class="row align-items-center justify-content-center mb-20">
+                                    <div class="col-xl-12">
+                                        <div class="row align-items-center">
+                                            <div class="col-xl-9 col-md-9">
+                                                <div class="music_field">
+                                                    <div class="thumb">
+                                                        <img src="{{ url('public/assets/frontend/img/music_man/' . $music_track['track_image']) }}" 
+                                                         alt="{{ $music_track['title'] }}" 
+                                                         class="img-fluid audio-thumb">
+                                                    </div>
+                                                    <div class="audio_name">
+                                                        <div class="name">
+                                                            <h4>{{ $music_track['title'] }}</h4>
+                                                        </div>
+                                                        <audio preload="auto" controls>
+                                                            <source src="{{ url('public/assets/frontend/audios/' . $music_track['track']) }}">
+                                                        </audio>
+                                                    </div>
                                                 </div>
-                                                <audio preload="auto" controls>
-                                                    <source src="{{ url('public/assets/frontend/audios/7010-fvr-master_3.mp3') }}">
-                                                </audio>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-md-3">
-                                        <div class="music_btn">
-                                            <a href="#" class="boxed-btn p-2">buy albam</a>
+                                            <div class="col-xl-3 col-md-3">
+                                                <div class="music_btn">
+                                                    <a href="#" class="boxed-btn p-2">buy albam</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-center mb-20">
-                            <div class="col-xl-12">
-                                <div class="row align-items-center">
-                                    <div class="col-xl-9 col-md-9">
-                                        <div class="music_field">
-                                            <div class="thumb">
-                                                <img src="{{ url('public/assets/frontend/img/music_man/i-am-fallin.jpg') }}" alt="I Am Fallin" class="img-fluid audio-thumb">
-                                            </div>
-                                            <div class="audio_name">
-                                                <div class="name">
-                                                    <h4>I Am Fallin</h4>
-                                                    {{-- <p>25 December, 2024</p> --}}
-                                                </div>
-                                                <audio preload="auto" controls>
-                                                    <source src="{{ url('public/assets/frontend/audios/i-am-fallin-king-viking-26Oct2024.mp3') }}">
-                                                </audio>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-md-3">
-                                        <div class="music_btn">
-                                            <a href="#" class="boxed-btn p-2">buy albam</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-center mb-20">
-                            <div class="col-xl-12">
-                                <div class="row align-items-center">
-                                    <div class="col-xl-9 col-md-9">
-                                        <div class="music_field">
-                                            <div class="thumb">
-                                                <img src="{{ url('public/assets/frontend/img/music_man/stay-with-me-remix.jpg') }}" alt="Stay With Me V2 MIX" class="img-fluid audio-thumb">
-                                            </div>
-                                            <div class="audio_name">
-                                                <div class="name">
-                                                    <h4>Stay With Me V2 MIX</h4>
-                                                    {{-- <p>15 December, 2024</p> --}}
-                                                </div>
-                                                <audio preload="auto" controls>
-                                                    <source src="{{ url('public/assets/frontend/audios/stay-with-me-remix.mp3') }}">
-                                                </audio>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-md-3">
-                                        <div class="music_btn">
-                                            <a href="#" class="boxed-btn p-2">buy albam</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center justify-content-center mb-20">
-                            <div class="col-xl-12">
-                                <div class="row align-items-center">
-                                    <div class="col-xl-9 col-md-9">
-                                        <div class="music_field">
-                                            <div class="thumb">
-                                                <img src="{{ url('public/assets/frontend/img/music_man/stay-with-me.jpg') }}" alt="Stay With Me"class="img-fluid audio-thumb">
-                                            </div>
-                                            <div class="audio_name">
-                                                <div class="name">
-                                                    <h4>Stay WIth Me</h4>
-                                                    {{-- <p>02 December, 2024</p> --}}
-                                                </div>
-                                                <audio preload="auto" controls>
-                                                    <source src="{{ url('public/assets/frontend/audios/stay-with-me-sample-mix-128.mp3') }}">
-                                                </audio>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-md-3">
-                                        <div class="music_btn">
-                                            <a href="#" class="boxed-btn p-2">buy albam</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            @endif
+                        @endforeach
+                    @endif
+                        
                     </div>
                     <div class="col-xl-10">
 
@@ -150,7 +78,7 @@
 
 
     <!-- youtube_video_area  -->
-    <div class="youtube_video_area">
+    {{-- <div class="youtube_video_area">
         <div class="container-fluid p-0">
             <div class="row no-gutters">
                 <div class="col-xl-12">
@@ -238,7 +166,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- / youtube_video_area  -->
 
 @endsection

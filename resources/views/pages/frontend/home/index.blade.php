@@ -38,7 +38,7 @@
                                                     {{-- <p>10 January, 2025</p> --}}
                                                 </div>
                                                 <audio preload="auto" controls>
-                                                    <source src="{{ url('public/assets/frontend/audios/'.$music_tracks[0]['audio']) }}">
+                                                    <source src="{{ url('public/assets/frontend/audios/'.$music_tracks[0]['track']) }}">
                                                 </audio>
                                             </div>
                                 </div>
@@ -63,12 +63,12 @@
                 <div class="col-12 col-md-12">
                     <div class="about_info pl-0">
                         <h3>King Viking</h3>
-                        <p class="pt-0 mb-0">{{ $about_info['intro'] }}</p>
+                        <p class="pt-0 mb-0">{{ $about_info['sub_description'] }}</p>
                     </div>
                 </div>
                 <div class="col-xl-5 col-md-6">
                     <div class="about_thumb">
-                        <img class="img-fluid" src="{{ asset('public/assets/frontend/img/' . $about_info['image']) }}" alt="About King Viking"/>
+                        <img class="img-fluid" src="{{ asset('public/assets/frontend/img/' . $about_info['feature_image']) }}" alt="About King Viking"/>
                     </div>
                 </div>
                 <div class="col-xl-7 col-md-6">
@@ -101,11 +101,11 @@
                         <div class="col-xl-3 col-lg-3 col-md-6">
                             <div class="single_video">
                                 <div class="thumb">
-                                    <img src="{{ url('public/assets/frontend/img/video/'.$video_track['video_image']) }}" alt="">
+                                    <img src="{{ url('public/assets/frontend/img/video/'.$video_track['track_image']) }}" alt="">
                                 </div>
                                 <div class="hover_elements">
                                     <div class="video">
-                                        <a class="popup-video" href="{{ url('public/assets/frontend/videos/'.$video_track['video']) }}">
+                                        <a class="popup-video" href="{{ url('public/assets/frontend/videos/'.$video_track['track']) }}">
                                                 <i class="fa fa-play"></i>
                                         </a>
                                     </div>
@@ -124,7 +124,7 @@
         </div>
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center">
-                <div class="col-xl-10 text-center">
+                <div class="col-xl-10 text-center mt-4">
                     <a class="boxed-btn3" href="{{ route('frontend.musicvideos') }}">View All Videos</a>
                 </div>
             </div>
@@ -178,7 +178,7 @@
                                                         <div class="music_field">
                                                             <div class="audio_name">
                                                                 <audio preload="auto" controls>
-                                                                    <source src="{{ url('public/assets/frontend/audios/' . $music_track['audio']) }}">
+                                                                    <source src="{{ url('public/assets/frontend/audios/' . $music_track['track']) }}">
                                                                 </audio>
                                                             </div>
                                                         </div>
@@ -227,7 +227,7 @@
                                                         <div class="music_field">
                                                             <div class="audio_name">
                                                                 <audio preload="auto" controls>
-                                                                    <source src="{{ url('public/assets/frontend/audios/' . $music_beat['audio']) }}">
+                                                                    <source src="{{ url('public/assets/frontend/audios/' . $music_beat['track']) }}">
                                                                 </audio>
                                                             </div>
                                                         </div>

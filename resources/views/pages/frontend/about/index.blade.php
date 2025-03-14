@@ -24,17 +24,17 @@
                 <div class="col-12 col-md-12">
                     <div class="about_info pl-0">
                         <h3>King Viking</h3>
-                        <p class="pt-0 mb-0">In another lifetime, Things could have turned any number of ways. I could have been a bee keeper, an elephant handler (yes, for real), and even climbing a coconut tree for a daily wage - its a real “thing" where I come from. But those possibilities were taken out of the equation very early in life. Luck for me (I think)! </p>
+                        <p class="pt-0 mb-0">{{ $about_info['sub_description'] }}</p>
                     </div>
                 </div>
                 <div class="col-xl-5 col-md-6">
                     <div class="about_thumb">
-                        <img class="img-fluid" src="{{ url('public/assets/frontend/img/king-viking-about-poster.jpg') }}" alt="">
+                        <img class="img-fluid" src="{{ asset('public/assets/frontend/img/' . $about_info['feature_image']) }}" alt="About King Viking"/>
                     </div>
                 </div>
                 <div class="col-xl-7 col-md-6">
                     <div class="about_info">
-                        <p class="pt-0 mb-0">I look back and music has been the only constant. Regarless of what I did, the love for song writing was there waiting to color any  lane I picked. It heals, finds solutions to complex problems and brings it home. So I keep writing music. But I cant help think about those other possibilities that could have narrated this life. I am greatful to music. I am always greatful for those that made it possible for me. Doesnt matter where it goes from here, because of you, I consider mine to be a successful story.</p>
+                        <p class="pt-0 mb-0">{{ $about_info['description'] }}</p>
                         <p class="pt-0 mb-0">Thank you for stopping by. I hope we can collaborate and make butiful music someday.</p>
                         <!--<div class="signature">
                             <img src="{{ url('public/assets/frontend/img/about/signature.png') }}" alt="">

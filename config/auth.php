@@ -40,6 +40,10 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins', // Must match the providers section below
+        ],
     ],
 
     /*
@@ -64,7 +68,10 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
-
+        'admins' => [  // This should match the guard provider
+            'driver' => 'eloquent',
+            'model' => App\Models\Admin::class, // Change this to your Admin model
+        ],
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',

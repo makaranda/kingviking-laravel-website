@@ -1,4 +1,48 @@
   <!-- header-start -->
+  @if(Auth::check())
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <!-- Navbar Toggler for Mobile View -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <!-- Navbar Links -->
+            <div class="collapse navbar-collapse nav-md-block" id="navbarNav"> 
+                <div class="row justify-content-center">
+
+                    <ul class="navbar-nav col-md-6">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{{ route('admin.dashboard') }}">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right-aligned Dropdown -->
+                    <ul class="navbar-nav ms-auto col-md-6 float-right justify-content-right pr-5">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                {{ Auth::user()->name }}
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+@endif
+
+
   <header>
     <div class="header-area ">
         <div id="sticky-header" class="main-header-area">
@@ -21,7 +65,8 @@
                                     <ul id="navigation">
                                         <li class="{{ route('home') == request()->url() ? 'active' : '' }}"><a class="active" href="{{ route('home') }}">home</a></li>
                                         <li class="{{ route('frontend.about') == request()->url() ? 'active' : '' }}"><a href="{{ route('frontend.about') }}">About</a></li>
-                                        <li class="{{ route('frontend.musictracks') == request()->url() ? 'active' : '' }}"><a href="{{ route('frontend.musictracks') }}">tracks</a></li>
+                                        <li class="{{ route('frontend.musictracks') == request()->url() ? 'active' : '' }}"><a href="{{ route('frontend.musictracks') }}">Music tracks</a></li>
+                                        <li class="{{ route('frontend.musicvideos') == request()->url() ? 'active' : '' }}"><a href="{{ route('frontend.musicvideos') }}">Video tracks</a></li>
                                         {{-- <li><a href="#">blog <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
                                                 <li><a href="blog.html">blog</a></li>

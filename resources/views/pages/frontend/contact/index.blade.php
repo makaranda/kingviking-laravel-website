@@ -22,7 +22,7 @@
     <div class="container">
       <div class="d-none d-sm-block mb-5 pb-4">
         <div id="map" style="">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d39970.61252233662!2d-79.40594099633311!3d43.663568319643446!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%20Ontario%20Canada!3m2!1d43.653226!2d-79.3831843!5e0!3m2!1sen!2slk!4v1739695286635!5m2!1sen!2slk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="{{ $settings['google_map'] }}" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
       </div>
@@ -67,20 +67,20 @@
             <span class="contact-info__icon"><i class="ti-home"></i></span>
             <div class="media-body">
               <h3>Canada.</h3>
-              <p>Rosemead, CA 91770</p>
+              <p>{{ $settings['address'] }}</p>
             </div>
           </div>
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
             <div class="media-body">
-              <h3>00 (94) 7739 44180</h3>
+              <h3>{{ $settings['contact_number'] }}</h3>
               <p>Mon to Fri 9am to 6pm</p>
             </div>
           </div>
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-email"></i></span>
             <div class="media-body">
-              <h3>info@kingviking.com</h3>
+              <h3>{{ $settings['email_address'] }}</h3>
               <p>Send us your query anytime!</p>
             </div>
           </div>

@@ -94,7 +94,8 @@
                             <ul>
                                 <li><a href="{{ route('home') }}">home</a></li>
                                 <li><a href="{{ route('frontend.about') }}">about</a></li>
-                                <li><a href="{{ route('frontend.musictracks') }}">tracks</a></li>
+                                <li><a href="{{ route('frontend.musictracks') }}">Music tracks</a></li>
+                                <li><a href="{{ route('frontend.musicvideos') }}">Video tracks</a></li>
                                 <li><a href="{{ route('frontend.contact') }}">contact</a></li>
                             </ul>
                         </div>
